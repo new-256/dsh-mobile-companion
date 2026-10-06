@@ -1,0 +1,43 @@
+{
+  "name": "dsh-mobile-companion",
+  "version": "0.3.0",
+  "description": "DSH 手机伴侣：配对/设备管理/移动端 UI（/m/），桌面同源同权",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "client.js",
+    "lib/",
+    "mobile/",
+    "docs/",
+    "test/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/run-all.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "dsh",
+    "mobile",
+    "companion",
+    "pairing"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "compat": {
+      "minDshVersion": "0.1.2-alpha.4",
+      "testedDshVersion": "0.1.2-rc.1"
+    }
+  }
+}

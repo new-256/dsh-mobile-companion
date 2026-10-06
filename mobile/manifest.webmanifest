@@ -1,0 +1,20 @@
+/**
+ * manifest.webmanifest — PWA 声明（可安装到主屏；核心能力不受影响）。
+ */
+{
+  "name": "DSH",
+  "short_name": "DSH",
+  "start_url": "/m/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f1117",
+  "theme_color": "#0f1117",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+node_modules/
+# 生成的包格式
+*.tgz
+# QR 重构产物（见 README「开发」）
+lib/qr-tables.mjs
+.qr-tables-{version,ecblocks,formatinfo}.json
+# 端点提取工具输出（开发参考，不随包分发）
+lib/endpoints.json
+lib/follow-frames.txt
+# 运行时
+mobile-companion
+# 调试
+*.log
+.DS_Store
+Thumbs.db
