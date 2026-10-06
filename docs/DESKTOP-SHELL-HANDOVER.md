@@ -201,3 +201,15 @@ git log --oneline -3 main.js settings.html settings-preload.js
 > 动动手指重启 DSH Desktop，设置 - 手机 板块就出现了。
 > 敬礼，DSH Cordis Plugin 系统的守护神。
 
+
+
+---
+
+## 0.2.0 升级兼容确认（2026-10-07 金标准验证）
+
+- **本插件版本**: 0.3.0
+- **目标运行时**: DSH 0.2.0-rc.2
+- **验证方式**: 隔离目录安装 0.2.0-rc.2 全套依赖，用 dsh-app-boot@0.2.0-rc.2 官方 valuatePluginCompatibility 逻辑对本插件实跑
+- **结论**: ✅ **PASS — 无需 version-exemption，DSH 更新后可正常加载启动**
+- **关键事实**: 0.2.0 环境 react 为 18（>=18.2.0 <19），与本插件前端 peer 一致；本插件无阻塞性 @deepseek-ai/dsh peer 冲突
+- 详见总台账：C:\Users\lcl\Desktop\DSH插件开发\插件版本管控与交接文档.md §6
